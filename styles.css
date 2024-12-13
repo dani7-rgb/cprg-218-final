@@ -1,0 +1,288 @@
+/* General Styles */
+body {
+    font-family: 'Bebas Neue', sans-serif; /* Applying Bebas Neue font */
+    font-weight: bold; /* Bold text */
+    font-size: 150%;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #000000;
+}
+
+.image-container {
+    width: 200px;  /* Change the width as needed */
+    height: 200px; /* Change the height as needed */
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #fff; /* Circle border */
+    margin-left: 600px; /* Adjust this value to move the image right */
+    
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ensures the image fills the circle without distorting */
+    
+}
+
+.home-content p {
+    width: 80%; /* Adjust the width as needed (e.g., 80% of the parent container) */
+    max-width: 600px; /* Optional: Set a maximum width */
+    margin: 20px auto; /* Centers the description box horizontally with some space on top and bottom */
+    text-align: center; /* Align the text to the left (optional) */
+    padding: 10px; /* Optional: Add some padding inside the box */
+}
+
+header {
+    background: #000000;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.navbar .nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Glow Effect on Hover */
+.navbar .nav-link:hover {
+    text-decoration: underline;
+    text-shadow: 0 0 10px #ff7eb3, 0 0 20px #ff7eb3, 0 0 30px #ff758f, 0 0 40px #ff758f;
+}
+
+/* Change Color on Click (Active State) */
+.navbar .nav-link.active {
+    color: #ff758f; /* Adjust the color for active state */
+}
+
+.page {
+    padding: 20px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Adjust the position of the description */
+.home-content p {
+    margin-top: 100px; /* Moves the description down or up */
+    margin-bottom: 100px;  /* Optional for space below the description */
+}
+
+/* Gallery */
+#portfolio .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Center the images */
+    margin-top: 20px;
+}
+
+/* Individual Image Sizes */
+#portfolio .gallery img.size1 {
+    width: 400px; /* Adjust the size for image 1 */
+    height: auto;
+    border-radius: 8px;
+}
+
+#portfolio .gallery img.size2 {
+    width: 400px; /* Adjust the size for image 2 */
+    height: auto;
+    border-radius: 8px;
+}
+
+#portfolio .gallery img.size3 {
+    width: 300px; /* Adjust the size for image 3 */
+    height: auto;
+    border-radius: 8px;
+}
+
+#portfolio .gallery img.size4 {
+    width: 400px; /* Adjust the size for image 4 */
+    height: auto;
+    border-radius: 8px;
+}
+
+#portfolio .gallery img.size5 {
+    width: 280px; /* Adjust the size for image 5 */
+    height: auto;
+    border-radius: 8px;
+}
+
+#portfolio .gallery img.size6 {
+    width: 320px; /* Adjust the size for image 6 */
+    height: auto;
+    border-radius: 8px;
+}
+
+#portfolio .gallery img.size7 {
+    width: 260px; /* Adjust the size for image 7 */
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Scroll to Top Button */
+#scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #5900ff; /* Add color to button background */
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#scroll-to-top.hidden {
+    display: none;
+}
+
+/* Glow Effect for Title */
+.welcome-text {
+    font-size: 3rem;
+    color: #ffffff;
+    text-shadow: 0 0 10px #ff7eb3, 0 0 20px #ff758f, 0 0 30px #ff758f, 0 0 40px #ff758f;
+}
+
+/* Gradient Backgrounds */
+#home {
+    background: linear-gradient(45deg, #5900ff, #ff758f);
+}
+
+#portfolio {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+}
+
+#about {
+    background: linear-gradient(45deg, #43cea2, #185a9d);
+    
+}
+
+/* Glow Effect for Home Page Title */
+.glow {
+    font-size: 3rem; /* Adjust the font size */
+    color: #fff; /* White text color */
+    text-shadow: 
+        0 0 5px #ff7eb3, 
+        0 0 10px #ff7eb3, 
+        0 0 15px #ff758f, 
+        0 0 20px #ff758f, 
+        0 0 25px #ff758f, 
+        0 0 30px #ff758f, 
+        0 0 35px #ff758f; /* Glowing effect */
+    margin-top: -130px;
+    margin-right: -230px;
+}
+
+/* Video Section */
+.video-section {
+    width: 80%; /* You can increase this value to make the box wider */
+    max-width: 1200px; /* Set a max-width to prevent the video from getting too wide */
+    margin: 20px auto; /* Center the box horizontally */
+}
+
+video {
+    width: 100%; /* Make the video fill the container */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+/* About Section Description Styling */
+#about p {
+    text-align: center; /* Center the text */
+    margin-left: auto;  /* Optional: Adjust horizontal alignment */
+    margin-right: auto; /* Optional: Adjust horizontal alignment */
+    padding: 10px; /* Optional: Add some padding inside the box */
+    max-width: 800px; /* Optional: Set a max-width if needed */
+}
+
+.social-icon {
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Ensure icons are square */
+    margin: 0 10px; /* Space between icons */
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Optional: adds a hover effect to enlarge icons slightly */
+}
+
+
+/* Styling for the About section */
+#about ul {
+    display: flex; /* Use flexbox to arrange items in a row */
+    justify-content: center; /* Align icons in the center */
+    gap: 20px; /* Add space between the icons */
+    list-style: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+#about li {
+    display: inline-block; /* Ensure list items stay in a row */
+}
+
+#about li img {
+    width: 100px; /* Increase the width */
+    height: 100px; /* Increase the height */
+  
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+
+
+.home-content h1 {
+    margin-top: 60px; /* Moves the title down */
+}
+
+
+.home-content p {
+    margin-top: 60px; /* Moves the description down */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; /* Default: centers the image within the container */
+    /* You can change 'center' to 'top', 'bottom', 'left', 'right', or use pixel values like '50% 30%' */
+}
+.image-container {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #fff;
+    position: relative; /* Enables positioning relative to its normal position */
+    left: -px;  /* Moves the image container 150px to the right */
+    top: 180px;    /* Moves the image container 50px down */
+}
+
+/* Add this to prevent horizontal scrolling */
+body {
+    overflow-x: hidden;
+}
+
+/* Ensure the container elements like .home-content are using the correct width */
+.home-content {
+    max-width: 100%; /* Ensures the container width doesn't exceed the viewport */
+    box-sizing: border-box; /* Ensures padding and margin don't cause overflow */
+}

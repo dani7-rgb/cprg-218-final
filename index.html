@@ -1,0 +1,83 @@
+ <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dani's Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <!-- Link to Bebas Neue font from Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    </head>
+    
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-link" data-target="home">Home</a>
+            <a href="#" class="nav-link" data-target="portfolio">Portfolio</a>
+            <a href="#" class="nav-link" data-target="about">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="page">
+            <div class="home-content">
+                <div class="image-container">
+                    <img src="me.webp" alt="Dani's Photo">
+                </div>
+            <h1 class="glow">Welcome to Dani's Portfolio</h1>
+            <p>As a graphic design student at SAIT, I have honed my skills in visual communication, focusing on both creative and technical aspects of design. With 7 years of experience in video editing, I have developed a strong foundation in crafting engaging content for various platforms, including YouTube, client projects, and freelancing work. This blend of graphic design and video editing allows me to approach design problems with a versatile perspective, ensuring effective and impactful visual solutions.</p>
+           
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="page hidden">
+            <h1>My Portfolio</h1>
+            <p>Here are some of my works from this semester</p>
+            <div class="gallery">
+                <img src="1.webp" alt="Design 1" class="size1">
+                <img src="2.webp" alt="Design 2" class="size2">
+                <img src="3.webp" alt="Design 3" class="size3">
+                <img src="4.webp" alt="Design 4" class="size4">
+                <img src="5.webp" alt="Design 5" class="size5">
+                <img src="6.webp" alt="Design 6" class="size6">
+                <img src="7.webp" alt="Design 7" class="size7">
+            </div>
+
+            <h2>Live Streaming</h2>
+            <div class="video-section">
+                <video controls>
+                    <source src="video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>This is a demo of my live streaming work, where I handle everything from technical setup to post production editing.</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="page hidden">
+            <h1>About Me</h1>
+            <p>Hello, I'm Dani, a graphic design student with over seven years of experience in video editing and multimedia creation. My passion for design and storytelling has led me to explore a wide range of creative disciplines, from branding and motion graphics to digital media production. I enjoy bringing ideas to life through visually compelling content that resonates with audiences.
+
+                With a strong foundation in design principles and a keen eye for detail, I strive to create impactful visuals that not only meet client needs but also push creative boundaries. Whether it's crafting a logo, designing a brand guide, or working on a video production, I approach each project with dedication, ensuring every detail aligns with the vision.
+                
+                Through my work, I aim to inspire and engage, offering solutions that are both aesthetically pleasing and functional. I am always exploring new trends and technologies to keep my designs fresh and innovative, ensuring that my work remains relevant in an ever-evolving creative landscape.
+                
+                Feel free to explore my portfolio, and let's connect to bring your next project to life.</p>
+            
+                <h2>Socials</h2>
+                <ul>
+                    <li><a href="https://www.instagram.com/dani_arshad7/" target="_blank"><img src="insta.webp" alt="Instagram" class="social-icon"></a></li>
+                    <li><a href="https://www.youtube.com/@LMCR710" target="_blank"><img src="youtube.webp" alt="YouTube" class="social-icon"></a></li>
+                    <li><a href="https://www.linkedin.com/in/danyal-arshad-9a0558219/" target="_blank"><img src="linkdin.webp" alt="linkdin" class="social-icon"></a></li>
+                    
+                </ul>
+                
+        </section>
+    </main>
+
+    <button id="scroll-to-top" class="hidden">Top</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
